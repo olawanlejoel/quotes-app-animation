@@ -12,19 +12,26 @@ body {
 }
 
 .container {
-	width: 1200px;
+	max-width: 1200px;
+	padding: 0;
 	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 20px;
+	}
 }
 
 .header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 3rem 0;
+	padding: 2.5rem 0;
 }
 
 .header img {
-	width: 70px;
+	width: 50px;
 }
 
 .header h1 {
@@ -36,7 +43,7 @@ body {
 
 .hero-img img {
 	width: 100%;
-	height: 500px;
+	height: 450px;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 10px;
@@ -47,14 +54,15 @@ body {
 }
 
 .hero-text p {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 300;
 	color: #333;
 	margin: 1rem 0;
 }
 
 .btn {
-	padding: 1.5rem 5rem;
+	margin: 0.7rem 0;
+	padding: 1rem 2rem;
 	border: none;
 	border-radius: 10px;
 	background-color: #2bb673;
@@ -79,6 +87,12 @@ body {
 	gap: 40px;
 }
 
+@media (max-width: 768px) {
+	.quote-container {
+		flex-direction: column-reverse;
+	}
+}
+
 .quote-img,
 .quote-text {
 	flex: 1;
@@ -86,7 +100,7 @@ body {
 
 .quote-img img {
 	width: 100%;
-	height: 500px;
+	height: 450px;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 10px;
@@ -98,14 +112,14 @@ body {
 }
 
 .quote p {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 300;
 	color: #333;
 	margin: 1rem 0;
 }
 
 .quote h3 {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 500;
 	color: #333;
 	margin: 1rem 0;
